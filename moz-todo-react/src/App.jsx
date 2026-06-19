@@ -1,23 +1,45 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
-// cdn import
+// bootstrap import
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // component import
-import Header from './components/header.jsx';
-import Main from './components/main.jsx';
-import Footer from './components/footer.jsx';
+import Header from './components/header/header.jsx';
+import Hero from './components/content/html_main.jsx';
+import Footer from './components/footer/footer.jsx';
 
-// import sytles
+// section imports
+import AboutMe from './components/content/AboutMe.jsx';
+import Journey from './components/content/Journey.jsx';
+import Projects from './components/content/Projects.jsx';
+import Contact from './components/footer/Contact.jsx';
+
+// import styles
 import './App.css';
+
+
 function App() {
   return (
-    <>
-    <Header />
-    <Main />
-    <Footer />
-    </>
+    <BrowserRouter>
+      <div>
+        {/* Navbar - selalu di atas */}
+        <Header />
+
+        {/* Semua section portfolio dalam 1 halaman */}
+        <main>
+          <section id="dashboard"><Hero /></section>
+          <section id="about"><AboutMe /></section>
+          <section id="journey"><Journey /></section>
+          <section id="projects"><Projects /></section>
+          <section id="contact"><Contact /></section>
+        </main>
+
+        {/* Footer */}
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

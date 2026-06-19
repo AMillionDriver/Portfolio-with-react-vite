@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import catImg from '../assets/cat.jpg';
+import catImg from '../../assets/cat.jpg';
 
 function Main() {
 
@@ -26,10 +26,10 @@ function Main() {
                 <img className='fotoKucing object-fit-cover' src={catImg}></img>
             </div>
             <div className='my-5 d-flex flex-column align-items-center justify-content-center'>
-                <h1 className='fw-bolder text-body fs-5'>Nanang Nurmansah</h1>
+                <h1 className='fw-bolder text-white fs-5'>Nanang Nurmansah</h1>
                 <details>
-                    <summary className='fw-bold'>About Me</summary>
-                    <p className='text-body-secondary'>
+                    <summary className='fw-bold text-white'>About Me</summary>
+                    <p className='text-secondary'>
                         Saya kucing
                     </p>
                 </details>
@@ -37,7 +37,7 @@ function Main() {
         </div>
 
         {/* FAB BUTTON */}
-        <aside className={`fab ${isVisible ? 'active' : ''}`}>
+        <aside className={`fab d-flex align-items-center justify-content-center ${isVisible ? 'active' : ''}`}>
             <a className='text-body-primary' href="#header">^</a>
         </aside>
     </main>

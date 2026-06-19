@@ -7,13 +7,15 @@
 *,
 *::before,
 *::after {
-    padding: 0 !important;
-    margin: 0 !important;
-    scroll-behavior: smooth !important;
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    width: 100%;
-    max-width: 2200px;
+    margin: 0;
 }
 .navbar a {
     text-decoration: none;
