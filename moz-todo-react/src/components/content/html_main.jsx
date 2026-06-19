@@ -21,7 +21,7 @@ function Main() {
     }, []);
 
   return (
-    <main className='container-fluid flex-md-column w-100 d-flex flex-row'>
+    <main data-aos="fade" className='container-fluid flex-md-column w-100 d-flex flex-row'>
         {/* profile about me */}
         <div className='w-100 rounded-bottom-5 shadow'>
             <div className='d-flex align-items-center justify-content-center'>

@@ -3,7 +3,7 @@ import resumeMy from '../../assets/resume.pdf';
 
 function Header() {
     return (
-        <header id="header" className="bg-dark w-100 d-flex flex-md-row flex-column justify-content-md-between align-items-center px-4 py-2">
+        <header data-aos="fade-down" id="header" className="bg-dark w-100 d-flex flex-md-row flex-column justify-content-md-between align-items-center px-4 py-2">
             <div className="icon">
                 <p className="text-white fs-5 mb-0">Nanang Nurmansah</p>
             </div>
