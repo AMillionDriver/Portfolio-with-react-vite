@@ -52,3 +52,12 @@ body {
 .resume {
     margin-top: 13px !important;
 }
+
+
+/* cursor auto typing */
+.cursor {
+    animation: blank 0.7s infinite;
+}
+@keyframes blank {
+    50% {opacity: 0;}
+}

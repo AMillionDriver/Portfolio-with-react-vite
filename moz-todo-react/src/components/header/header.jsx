@@ -18,7 +18,7 @@ function Header() {
                 <a
                     href={resumeMy}
                     download="resume.pdf"
-                    className='text-white p-1 my-2 rounded-5 bg-transparent border border-white text-decoration-none fs-6'
+                    className='text-white p-1 my-2 mb-5 rounded-5 bg-transparent border border-white text-decoration-none fs-6'
                     style={{cursor: 'pointer'}}
                 >Resume</a>
             </div>

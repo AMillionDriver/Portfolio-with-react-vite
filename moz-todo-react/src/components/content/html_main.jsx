@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import catImg from '../../assets/cat.jpg';
+import { ReactTyped } from 'react-typed';
+
 
 function Main() {
 
@@ -19,21 +21,33 @@ function Main() {
     }, []);
 
   return (
-    <main className='w-100 d-flex flex-row'>
+    <main className='container-fluid flex-md-column w-100 d-flex flex-row'>
         {/* profile about me */}
         <div className='w-100 rounded-bottom-5 shadow'>
             <div className='d-flex align-items-center justify-content-center'>
                 <img className='fotoKucing object-fit-cover' src={catImg}></img>
             </div>
-            <div className='my-5 d-flex flex-column align-items-center justify-content-center'>
-                <h1 className='fw-bolder text-white fs-5'>Nanang Nurmansah</h1>
-                <details>
-                    <summary className='fw-bold text-white'>About Me</summary>
-                    <p className='text-secondary'>
-                        Saya kucing
-                    </p>
-                </details>
+            
+            <div className='d-flex align-items-center justify-content-center mt-3 mb-5'>
+                <h2 className='text-body mb-0'>
+                    <ReactTyped
+                        strings={[
+                            "Halo Saya, ",
+                            "Nanang Nurmansah",
+                            "Seorang",
+                            "Web Developer",
+                            "Android Developer",
+                            "And Content Creator"
+                        ]}
+                        typeSpeed={80}
+                        backSpeed={50}
+                        backDelay={1500}
+                        loop
+                        className='text-primary'
+                    />
+                </h2>
             </div>
+            
         </div>
 
         {/* FAB BUTTON */}
