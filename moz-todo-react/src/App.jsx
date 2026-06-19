@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 // component import
-import Body from './components/body.jsx';
 import Header from './components/header.jsx';
 import Main from './components/main.jsx';
 import Footer from './components/footer.jsx';
@@ -15,7 +14,6 @@ import './App.css';
 function App() {
   return (
     <>
-    <Body />
     <Header />
     <Main />
     <Footer />

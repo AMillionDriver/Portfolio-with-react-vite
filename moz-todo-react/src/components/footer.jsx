@@ -1,6 +1,6 @@
 function Footer() {
     return(
-        <footer className="bg-dark d-flex justify-content-evenly">
+        <footer className="w-100 bg-dark d-flex justify-content-evenly">
             <div className="d-flex flex-column">
                 <a href="mailto:nanangnurmansah5@gmail.com">Businees Mail</a>
                 <a href="https://www.linkedin.com/in/nanangnumansah/">Linkedin</a>

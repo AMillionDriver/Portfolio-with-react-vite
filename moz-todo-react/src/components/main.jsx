@@ -13,23 +13,23 @@ function Main() {
                 setIsVisible(false)
             }
         };
-            document.addEventListener('scroll', handleScroll);
+            window.addEventListener('scroll', handleScroll);
 
-            return () => document.removeEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
   return (
-    <main className='d-flex flex-row'>
+    <main className='w-100 d-flex flex-row'>
         {/* profile about me */}
         <div className='w-100 rounded-bottom-5 shadow'>
             <div className='d-flex align-items-center justify-content-center'>
                 <img className='fotoKucing object-fit-cover' src={catImg}></img>
             </div>
             <div className='my-5 d-flex flex-column align-items-center justify-content-center'>
-                <h1 className='fw-bolder fs-5'>Nanang Nurmansah</h1>
+                <h1 className='fw-bolder text-body fs-5'>Nanang Nurmansah</h1>
                 <details>
                     <summary className='fw-bold'>About Me</summary>
-                    <p className='text-secondary'>
+                    <p className='text-body-secondary'>
                         Saya kucing
                     </p>
                 </details>
@@ -38,7 +38,7 @@ function Main() {
 
         {/* FAB BUTTON */}
         <aside className={`fab ${isVisible ? 'active' : ''}`}>
-            <a className='text-primary' href="#header">^</a>
+            <a className='text-body-primary' href="#header">^</a>
         </aside>
     </main>
   );
